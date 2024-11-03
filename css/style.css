@@ -164,10 +164,7 @@ form{
     display: flex; 
     justify-content: center;
     align-items: center;
-    color: black; 
-    font-size: 16px;
     width: 50px;
-    height: 49px; 
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
@@ -175,7 +172,6 @@ form{
 #destination{
     border: none;
     font-size: 18px;
-    background-color: white;
     padding: 5px;
     border: 1px solid #F2F2F2 ;
 }
@@ -183,7 +179,6 @@ form{
 .search-submit {
     background-color: #0065FC;
     font-size: 18px;
-    height: 49px;
     border-radius: 0 15px 15px 0px;
     border: none;
     color: white;
@@ -230,7 +225,7 @@ form{
 /***info***/
 
 .info i{
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     background-color: #0065FC;
     border: 1px solid #d9d9d9;
@@ -244,7 +239,7 @@ form{
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -272,8 +267,6 @@ form{
     border: 5px solid white;
     border-radius: 20px;
     box-shadow: 5px 4px 5px #d9d9d9;
-    width: auto;
-    max-width: 100%;
 }
 
 .cartes-subtitle{
@@ -291,10 +284,6 @@ form{
 
 .cartes-rating {
     margin: 5px;
-}
-
-.hebergements a {
-    width: 250.33px;
 }
 
 .column1{
@@ -368,17 +357,17 @@ form{
 
 .act-card img{
     height: 380px;
+    width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
 .act-card{
     max-width: 297.5px;
-    width: 100%;
+    height: 100%;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    align-items: stretch;
     border: 1px solid #d9d9d9;
     border-radius: 20px;
     box-shadow: 4px 1px 10px #d9d9d9;
@@ -393,13 +382,11 @@ form{
     flex-direction: row;
     flex-wrap: nowrap;
     padding-top: 10px;
-    justify-content: space-between;
 }
 
 /***footer***/
 .footer {
     display: flex;
-    justify-content: space-around;
     margin-top: 50px;
     background-color: var(--main-bg-color);
 }
@@ -496,7 +483,6 @@ form{
     }
 
     .act-card{
-        width: auto;
         height: 270px;
         max-width: none;
     }
@@ -509,6 +495,12 @@ form{
     .act-container {
         align-items: center;
         gap: 30px;
+    }
+    .act-card h3{
+        display: flex;
+        align-items: center;
+        max-height: 30px;
+        height: 100%;
     }
 
     .footer{
@@ -546,7 +538,7 @@ form{
 
     .nav{
         width: 100%;
-        text-align: centers;
+        text-align: center;
     }
 
     .nav ul{
@@ -587,7 +579,7 @@ form{
 
     .form{
         padding: 0;
-        margin: 0 0 0 15px;
+        margin: 0 15px 0 15px;
         border: 1px solid #f2F2F2;
         border-radius: 15px;
     }
@@ -603,7 +595,6 @@ form{
         display: block;
         background-color: #0065FC;
         font-size: 18px;
-        height: 49px;
         border-radius: 15px;
         border: none;
         color: white;
@@ -634,8 +625,7 @@ form{
     }
 
     .fa-magnifying-glass {
-        padding: 15px 15px 15px 10px;
-        opacity: 1;
+        padding: 15px 10px;
     }
 
     .info{
@@ -705,11 +695,6 @@ form{
         gap: 30px;
     }
 
-    .act-card{
-        height: 270px;
-        width: auto;
-    }
-
     .act-card img {
         height: auto;
     }
@@ -720,7 +705,6 @@ form{
     }
 
     .footer{
-        display: flex;
         flex-direction: column;
         gap: 0;
     }
