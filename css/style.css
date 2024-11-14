@@ -13,6 +13,10 @@
     color: var(--main-color);
 }
 
+::placeholder{
+    font-weight: 400;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -171,11 +175,9 @@ form{
 #destination{
     border: none;
     font-size: 18px;
-    padding: 15px;
-    border: 1px solid var(--main-bg-color) ;
-}
-#destination:hover {
     font-weight: bold;
+    padding: 24px;
+    border: 1px solid var(--main-bg-color) ;
 }
 
 .search-submit {
@@ -184,6 +186,8 @@ form{
     border-radius: 0 15px 15px 0px;
     border: none;
     color: white;
+    padding: 0 16px;
+    font-weight: 700;
 }  
 
 .search-logo {
@@ -222,6 +226,7 @@ form{
 
 .btn i{
     padding-right: 10px;
+    font-size: 18px;
 }
 
 /***info***/
@@ -524,10 +529,11 @@ form{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        height: 115px;
     }
 
     .logo img{
-        padding-top: 10px;
+        padding-top: 15px;
         margin: 0;
     }
 
@@ -546,7 +552,7 @@ form{
 
     .nav ul li{
         border-bottom: 2px solid var(--main-bg-color);
-        padding: 20px 0 10px 0;
+        padding-bottom: 10px;
     }
 
     .nav ul li:hover{
@@ -555,8 +561,8 @@ form{
         line-height: 30px;
     }
 
-    .desc{
-        margin: 0 15px;
+    .recherche{
+        padding: 0 20px;
     }
 
     .desc h1 {
@@ -575,7 +581,6 @@ form{
 
     .form{
         padding: 0;
-        margin: 0 15px 0 15px;
         border: 1px solid var(--main-bg-color);
         border-radius: 15px;
     }
@@ -599,10 +604,6 @@ form{
         box-shadow: 1px 4px 2px 0px #D9D9D9;
     }
 
-    .filtres{
-        margin: 15px 0 0 15px;
-    }
-
     .filtre-container {
         display: flex;
         gap: 15px 5px;
@@ -612,7 +613,10 @@ form{
 
     .btn{
         width: 45%;
-        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 4px 0 4px 15px;
     }
     
     .search{
@@ -653,7 +657,7 @@ form{
     }
 
     .hebergements-and-populaires section {
-        padding: 25px 10px;
+        padding: 25px 20px;
         border-radius: 0;
         gap: 0;
     }
@@ -679,7 +683,7 @@ form{
     }
 
     .activity{
-        margin: 50px 15px 15px 15px;
+        padding: 50px 20px 0 20px;
     }
 
     .act-container {
@@ -705,14 +709,11 @@ form{
 
     .propos{
         width: auto;
-        padding: 20px 0 20px 20px;
     }
     .hotel{
         width: auto;
-        padding: 20px 0 20px 20px;
     }
     .assistance{
         width: auto;
-        padding: 20px 0 20px 20px;
     }
 }
