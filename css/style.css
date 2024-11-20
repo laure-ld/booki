@@ -616,7 +616,8 @@ form{
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 4px 0 4px 15px;
+        padding: 4px 0 4px 13px;
+        font-size: 12px;
     }
     
     .search{
